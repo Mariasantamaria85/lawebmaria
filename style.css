@@ -1,0 +1,650 @@
+
+.titulo {
+  font-family: "poppins-bold";
+  position: absolute; /* Posiciona el texto de forma absoluta dentro del contenedor */
+  top: 50%; /* Alinea el texto en la mitad superior del contenedor */
+  left: 50%; /* Alinea el texto en la mitad izquierda del contenedor */
+  transform: translate(-50%, -50%); /* Centra el texto dentro del contenedor */
+    z-index: 999; /* Asegura que el h2 esté encima de todo */
+  font-size: 6rem;
+  color: rgb(247, 247, 247); /* Rosa */
+  text-decoration: none;
+  text-shadow: 1px 2px 2px rgb(188, 88, 255), 0 0 1em rgb(196, 52, 139), 0 0.1em 0.2em rgb(130, 59, 193);
+
+}
+
+div.container{
+display: flex;
+/* align-items: center;  */
+/* left:50%;
+right: 50%; */
+/* height: 100vh; */
+text-align: start;
+}
+.container img{
+left:500px
+
+}
+
+.texto{
+font-family:"courier-bold";
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 999; /* Asegura que el h2 esté encima de todo */
+font-size: 40px;
+color: #ededed; /* Rosa */
+text-decoration: none;
+text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+/* ----------------------------------------------------------aqui esta el body */
+
+
+.body-index { 
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  height: 3333px;
+  margin: 0;
+  /* height: 3000px; */
+  background-color:var(--secondary);
+}
+
+::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento */
+}
+.menu-container {
+  position: fixed;
+  list-style: none;
+  width: 98%;
+  top: 10px;
+  left: 20px;
+  z-index: 999;
+  display: flex;
+  justify-content:space-between ;
+ flex-wrap: nowrap;
+  text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+align-items:center ;
+  cursor: pointer;
+  font-size: 2rem; /* Cambiado a 168px */
+  color: var(--neutral) 
+ 
+}
+
+
+
+.menu-icon {
+  
+  /* vertical-align: top;  */
+  font-family:"poppins-bold";
+  text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+  cursor: pointer;
+  font-size: 2rem; /* Cambiado a 168px */
+  color: var(--neutral) 
+  
+}
+.root-menu{
+  font-family:"poppins-bold";
+  text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+font-size: 2rem; 
+  color: var(--neutral);
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-flex;
+
+}
+div.root-menu li a{
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+div.root-menu li a:visited{
+  color: #f0f0f0;
+  text-decoration: none;
+} 
+
+
+ .tienda{
+  font-family:"poppins-bold";
+  text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+  /* font-size: 2rem;  */
+  color: var(--neutral);
+  list-style: none;
+  list-style-type: none;
+/* margin-left: 1450px; */
+   padding: 0;
+  display: inline-flex;
+  gap: 1rem;
+ 
+ 
+}
+ .tienda ul{
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    list-style: none;
+    list-style-type: none;
+  } 
+  
+  div.tienda ul li a{
+    color: #f0f0f0;
+    text-decoration: none;
+  }
+  
+  div.tienda ul li a:visited{
+    color: #f0f0f0;
+    text-decoration: none;
+  } 
+  .tienda-index{
+    font-family:"poppins-bold";
+    text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+    /* font-size: 2rem;  */
+    color: var(--neutral);
+    list-style: none;
+    list-style-type: none;
+  /* margin-left: 1450px; */
+     padding: 0;
+    display: inline-flex;
+    gap: 1rem;
+   
+   
+  }
+   .tienda-index ul{
+      display: flex;
+      gap: 10px;
+      margin: 0;
+      list-style: none;
+      list-style-type: none;
+    } 
+    
+    div.tienda-index ul li a{
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+    
+    div.tienda-index ul li a:visited{
+      color: #f0f0f0;
+      text-decoration: none;
+    } 
+  
+ .menu {
+  font-family:"poppins-bold";
+  position: fixed;
+  top: 60px;
+  left: -400px;
+  /* width: 200px; */
+  height: 80%;
+ text-align: left;
+  transition: left 0.3s ease;
+  z-index: 998;
+
+}
+.menu.active {
+  left: -17px;
+}
+
+.menu ul {
+  height: 300px;
+  margin-top: 2.7rem;
+  list-style: none;
+  margin: 0;
+  /* margin-left: 20px; */
+}
+.menu ul li  {
+  /* padding-bottom: 5px; */
+  height: 50px;
+}
+.menu ul li a {
+
+  font-family:"poppins-bold";
+  font-size: 1.56rem;
+  color: white;
+  /* color: var(--neutral);  */
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+.icon-house{
+  width: 30px;
+ /* box-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+*/
+fill: aqua;
+}
+
+div.menu ul li a:hover {
+font-size: 1.7rem;
+color: var(--accent);
+/* transition: steps(200); */
+
+}
+
+.parallax{
+/* position: relative; */
+ width: 100%;
+ height: 1400px;
+
+ overflow-x: hidden;
+
+}
+
+.parallax img{
+top: 0;
+left: 0;
+width: 100%;
+position: absolute;
+/* pointer-events: none; */
+}
+
+/* .foter-index{
+  height: 100px;
+} */
+
+
+/* -------------------------------------------------------aqui el p */
+
+.metatitulo{
+  font-family: "courier";
+  font-size: 3rem;
+}
+
+.gritofinal{
+font-family: "poppins";
+font-size: 3rem;
+}
+#imgpara1{
+bottom: 50px;
+}
+#imgpara2{
+left:-100px;
+}
+
+#imgpara3{
+top:-100px;
+}
+#imgpara4{
+right:-200px;
+bottom: -100px;
+}
+#imgpara5{
+right:-40px;
+bottom: -20px;
+
+}
+#imgpara6{
+right:-100px;
+bottom: -100px;
+}
+#imgpara7{
+top:-40px;
+z-index: 1;
+}
+#imgpara8{
+right:-40px;
+bottom: -20px;
+}
+
+#imgpara11{ 
+right: 500px;
+z-index: -10;
+}
+#imgpara12{ 
+right: -200px;
+}
+#imgpara13{ 
+right: -100px;
+top: -100px;
+}
+#imgpara14{ 
+right: 200px;
+}
+#imgpara15{ 
+right: -200px;
+}
+
+
+
+/* ----------------------------aqui lo incrustado en el manifesto */
+
+.frame {
+/* top: 1600px; */
+display: flex !important;;
+justify-content: center !important;
+width: 100%;
+height: 1500px;
+}
+
+.manifesto-wrapper {
+/* background-color: var(--primary-dark); */
+/* background-color: chartreuse; */
+margin-top: 30%;
+width: 70%;
+/* height: 2108px; */
+/* display: flex;
+flex-direction: row;
+justify-content: center; */
+/* display: flex;
+flex-direction: column;
+align-items: center; */
+}
+
+
+/* display: flex;
+align-items: center;
+justify-content: center; */
+
+.fotosytitulo-manifesto{
+top: 1300px;
+}
+
+.frame .fondoderecha {
+position: absolute;
+width: 570px;
+height: 1526px;
+top:2000px;
+right: -100px;
+
+/* transform: translatey(0px);
+animation: float 6s ease-in-out infinite; */
+}
+
+
+
+
+
+.frame .fondoizq {
+position: absolute;
+width: 657px;
+height: 1782px;
+left: -100px;
+top: 1700px;
+}
+
+
+
+
+
+
+/* ---------------------------------------------parrafos incrustados */
+
+.parrafosmanifesto{
+
+display: flex !important;
+flex-direction: column !important;;
+align-items: center !important;;
+margin-top: -200px;
+}
+
+.frame .somos-una-luz-que {
+
+width: 862px;
+
+font-family: "poppins";
+
+color: var(--neutral);
+font-size: 22px;
+text-align: center;
+text-shadow: 1px 1px 2px rgb(12, 15, 15), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+.frame .negamos-labase {
+
+width: 862px;
+
+font-family: "poppins";
+font-weight: var(--texto-font-weight);
+color: var(--neutral);
+font-size: var(--texto-font-size);
+text-align: center;
+text-shadow: 1px 1px 2px rgb(12, 15, 15), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+.frame .nosotros-somos-un {
+
+width: 862px;
+
+font-family: "poppins";
+font-weight: var(--texto-font-weight);
+color: var(--neutral);
+font-size: 22px;
+text-align: center;
+text-shadow: 1px 1px 2px rgb(12, 15, 15), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+.frame .la-luz-azul {
+
+width: 862px;
+font-family: "poppins";
+color: var(--neutral);
+font-size: 22px;
+text-align: center;
+text-shadow: 1px 1px 2px rgb(12, 15, 15), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+.frame .rechazo-la-solidez {
+
+width: 862px;
+font-family: "poppins";
+color: var(--neutral);
+font-size: 22px;
+text-align: center;
+text-shadow: 1px 1px 2px rgb(12, 15, 15), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+  }
+
+.frame .escultura-libre {
+
+width: 862px;
+font-family: poppins;
+font-weight: var(--texto-font-weight);
+color: var(--neutral);
+font-size: var(--texto-font-size);
+text-align: center;
+text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+}
+
+.frame .no-soportes {
+
+width: 862px;
+font-family: "poppins";
+font-weight: var(--texto-font-weight);
+color: var(--neutral);
+font-size: var(--texto-font-size);
+text-align: center;
+text-shadow: 1px 1px 2px rgb(12, 15, 15), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+}
+
+/* ---------------------------------------------titulos parrafo */
+
+.frame .ligereza {
+
+
+font-family: "Poppins", Helvetica;
+font-weight: 700;
+color: var(--neutral);
+font-size: 48px;
+text-align: center;
+letter-spacing: 0;
+line-height: normal;
+text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+.frame .cromatismo{
+font-family: "Poppins", Helvetica;
+font-weight: 700;
+color: var(--neutral);
+font-size: 48px;
+text-align: center;
+letter-spacing: 0;
+line-height: normal;
+text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+.frame .abajo {
+
+font-family: "Poppins", Helvetica;
+color: var(--neutral);
+font-size: 70px;
+text-align: center;
+letter-spacing: 0;
+line-height: normal;
+text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+
+.frame .laproyeccion {
+
+font-family: "Poppins", Helvetica;
+color: var(--neutral);
+font-size: 48px;
+text-align: center;
+text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+.frame .revolucion-luminica {
+font-family: "Poppins", Helvetica;
+font-weight: 700;
+color: var(--neutral);
+font-size: 48px;
+text-align: center;
+letter-spacing: 0;
+line-height: normal;
+text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+.frame .autonomia {
+
+
+
+font-family: "Poppins", Helvetica;
+font-weight: 700;
+color: var(--neutral);
+font-size: 48px;
+text-align: center;
+letter-spacing: 0;
+line-height: normal;
+text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+.frame .abajolapeana {
+
+
+
+font-family: "Poppins", Helvetica;
+font-weight: 700;
+color: var(--neutral);
+font-size: 48px;
+text-align: center;
+letter-spacing: 0;
+line-height: normal;
+text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+
+}
+
+.frame .manifiestotitulo {
+
+
+font-family: "poppins-bold";
+font-weight: var(--t-tulo-font-weight);
+color: var(--neutral);
+font-size: 64px;
+text-align: center;
+
+
+
+text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+}
+
+.frame .conclusion {
+
+
+
+font-family: "Poppins", Helvetica;
+font-weight: 700;
+color: var(--neutral);
+font-size: 48px;
+text-align: center;
+
+line-height: normal;
+text-shadow: 1px 1px 2px rgb(48, 121, 121), 0 0 1em rgb(23, 18, 21), 0 0 0.2em rgb(16, 19, 19);
+ 
+}
+/* ----------------estilos del foooter */
+
+
+.footer{
+bottom: 0;
+height: 200px;
+    width: 60%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+}
+.redes{
+    display: flex;
+justify-content: center;
+list-style: none;
+gap: 20px;
+}
+
+.redes li a{
+    gap: 20px;
+
+}
+
+.menu-final{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    color: var(--terciary-dark);
+}
+
+.menu-final ul{
+    display: flex;
+    flex-direction: row;
+     justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-family:poppins;
+  
+    /* justify-content: baseline; */
+    gap: 50px;
+}
+.menu-final ul li {
+    gap: 20px;
+
+   }
+.menu-final ul li a{
+    color: inherit;
+  text-decoration: none;
+}
+.copy{
+    margin: 0 auto;
+    font-size: 20px;
+    font-family:poppins;
+    color: var(--terciary-dark);
+   align-items: center;
+   gap: 50px;
+}
+
+.parallax2{
+  display: none;
+}
+/* ---------------------------------------------media queris */
+

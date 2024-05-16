@@ -1,0 +1,50 @@
+:root {
+        --neutral:#ffffff;
+        --primary:#89cdcdff;
+        --primary-light:#73eee6ff;   
+        --dark:#3a8896ff;           
+        --dark-plus:#24606bff;
+            
+        --secondary:#ffd9f0ff;
+        --secondary-darkplus:#bf2abfff;
+            
+        --terciary:#ff4dffff;
+        --terciary-dark:#7c3c8cff;
+        --accent:#c4f340ff;     
+        
+        --courier-prime: "Courier Prime", Helvetica;
+}
+
+@font-face {
+    font-family:"courier-bold";
+    src: url(/fonts/CourierPrime-Bold.woff);
+}
+@font-face {
+    font-family:"courier" ;
+    src: url(/fonts/CourierPrime-Regular.woff);
+}
+@font-face {
+    font-family:"poppins-bold" ;
+    src: url(/fonts/Poppins-Bold.woff);
+}
+@font-face {
+    font-family:"poppins" ;
+    src: url(/fonts/Poppins-Regular.woff);
+}
+@font-face {
+    font-family:"texto" ;
+    src: url(/fonts/ShareTechMono-Regular.woff);
+}
+
+
+:root {
+    --t-tulo-line-height: normal;
+    --t-tulo-font-style: normal;
+
+ 
+    --texto-font-size: 22px;
+    --texto-letter-spacing: 0px;
+    --texto-line-height: normal;
+    --texto-font-style: normal;
+    }
+  

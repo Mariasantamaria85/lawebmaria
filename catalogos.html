@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogos</title>
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="stylecatalogos.css">
+    
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="body-catalogos">
+    <div class="menu-container" >
+      
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+          <li><a>MENU</a></li>
+         </div> 
+
+         <div class="root-menu">
+          <li><a href="index.html">Home></a></li>
+          <li><a >Catálogos</a></li>
+       
+        </div>
+
+          <div class="tienda">
+            <ul>
+              <li><a href="tienda.html">TIENDA</a></li>
+              <li><a href="contacto.html">CONTACTO</a></li>
+                 </ul>
+            </div>
+          
+        </div>
+  
+      <div class="menu" id="menu">
+          <ul>
+            
+            <li><a href="catalogos.html">CATÁLOGOS</a></li>
+            <li><a href="expos.html">EXPOSICIONES</a></li>
+            <li><a href="stim/dibujando/inicio.html">DESCUBRE</a></li>
+            <li><a href="indexcastillo.html">MARÍA</a></li>
+  
+          </ul>
+        </div>
+
+
+    <div class="card-container">
+        <div class="card1">
+        <h2 class="card-name-catalogo encaje">Encaje</h2>
+        <a href="catalogos/encaje.html" class="card">
+            <img id="img1" src="imagenes_web/catalogos/1cat.webp" class="img4cat" alt="" onmousemove="moveImage(event, 'img1')" onmouseleave="resetImage('img1')">
+        </a>
+         </div>
+         <div class="card2">
+          <h2 class="card-name-catalogo hilo">Hilo</h2>
+        <a href="catalogos/catalogo2.html" class="card">
+            <img id="img1" src="imagenes_web/catalogos/2cat.webp" class="img4cat" alt="" onmousemove="moveImage(event, 'img1')" onmouseleave="resetImage('img1')">
+        </a>
+          </div>
+          <div class="card3">
+            <h2 class="card-name-catalogo pandemia">Pandemia</h2>
+        <a href="catalogos/pandemia.html" class="card">
+            <img id="img1" src="imagenes_web/catalogos/3cat.webp" class="img4cat" alt="" onmousemove="moveImage(event, 'img1')" onmouseleave="resetImage('img1')">
+        </a>
+          </div>
+          <div class="card4">
+            <h2 class="card-name-catalogo post-pandemia">Postpandemia</h2>
+        <a href="catalogos/postpandemia.html" class="card" >
+        <img id="img1" src="imagenes_web/catalogos/4cat.webp" class="img4cat" alt="" onmousemove="moveImage(event, 'img1')" onmouseleave="resetImage('img1')">
+        </a>
+          </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+
+
+</body>
+</html>
